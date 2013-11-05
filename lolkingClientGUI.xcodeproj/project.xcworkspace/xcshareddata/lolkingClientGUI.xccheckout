@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FB216D0F-B76D-4443-8C7B-F052E2FDDFA2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>lolkingClientGUI</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9DB93794-DB0A-44DE-A972-EE46FAF9366F</key>
+		<string>https://github.com/eamars/lolkingClientGUI.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>lolkingClientGUI.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9DB93794-DB0A-44DE-A972-EE46FAF9366F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/eamars/lolkingClientGUI.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9DB93794-DB0A-44DE-A972-EE46FAF9366F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9DB93794-DB0A-44DE-A972-EE46FAF9366F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>lolkingClientGUI</string>
+		</dict>
+	</array>
+</dict>
+</plist>

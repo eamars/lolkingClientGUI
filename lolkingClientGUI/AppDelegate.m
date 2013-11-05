@@ -78,6 +78,7 @@
 	currentProgress.stringValue = [currentProgress.stringValue stringByAppendingString:@"\nRetrieving summoner data from lolking..."];
 
 	summoner *result = [[summoner alloc] initWithSummonerName:summonerNameEntry.stringValue region:regionSelector.selectedItem.title];
+	
 	//currentProgress.stringValue = @"Displaying...";
 	//set data
 	currentLevelDisplay.stringValue = [result getCurrentLevel];

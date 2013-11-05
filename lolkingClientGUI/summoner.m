@@ -36,6 +36,9 @@
 	// Download the content of result page
 	NSData *data = [NSData dataWithContentsOfURL:searchURL];
 	
+	// Create the user array
+	NSMutableArray *users = [NSMutableArray array];
+	
 	/* Parser html pages to extract useful data */
 	HTMLParser *parser = [[HTMLParser alloc] initWithData:data error:nil];
 	HTMLNode *bodyNode = [parser body];
@@ -49,53 +52,54 @@
 		{
 			NSArray *subDivNodes = [divNode findChildTags:@"div"];
 			
+			NSMutableDictionary *user = [NSMutableDictionary dictionary];
+			
 			for (HTMLNode *subDivNode in subDivNodes){
 				// Extract region
 				if ([[subDivNode getAttributeNamed:@"style"] isEqualToString:@"font-size: 14px; display: block;"])
 				{
-					// if the region not fit, skip
-					if (![[subDivNode allContents] isEqualToString:region]) {
-						continue;
-					}
-					
+					[user setObject:[subDivNode allContents] forKey:@"region"];
 				}
 				// Extract currentlevel
 				if ([[subDivNode getAttributeNamed:@"style"] isEqualToString:@"font-size: 12px; margin-top: 4px;"])
 				{
-					currentLevel = [subDivNode allContents];
+					[user setObject:[subDivNode allContents] forKey:@"currentlevel"];
 				}
 				// Extract RankedLevel
 				if ([[subDivNode getAttributeNamed:@"style"] isEqualToString:@"font-size: 14px; color: #FFF; text-shadow: 0 0 1px #000;"])
 				{
-					rankLevel = [subDivNode allContents];
+					[user setObject:[subDivNode allContents] forKey:@"ranklevel"];
 				}
 				// Extract RankedScore
 				if ([[subDivNode getAttributeNamed:@"style"] isEqualToString:@"display: inline-block; vertical-align: middle; font: bold 24px/32px \"Trebuchet MS\"; margin-left: 0px;"])
 				{
-					rankScore = [subDivNode allContents];
+					[user setObject:[subDivNode allContents] forKey:@"rankscore"];
 				}
+				
 				// if no rank
 				if ([[subDivNode getAttributeNamed:@"style"] isEqualToString:@"font-size: 18px; color: #FFF; text-shadow: 0 0 1px #000;"])
 				{
-					rankLevel = [subDivNode allContents];
-					rankScore = @"0";
+					[user setObject:[subDivNode allContents] forKey:@"ranklevel"];
+					[user setObject:@"0" forKey:@"rankscore"];
 				}
 				
+				
+				// Extract RankedWins and looses and average kda
 				if ([[subDivNode getAttributeNamed:@"style"] isEqualToString:@"display: table; width: 100%"])
 				{
 					NSArray *spanNodes = [subDivNode findChildTags:@"span"];
 					for (HTMLNode *spanNode in spanNodes){
 						//wins
 						if ([[spanNode getAttributeNamed:@"style"] isEqualToString:@"font-weight: bold; font-size: 18px; line-height: 28px; color: #6C3;"]) {
-							rankWins = [spanNode allContents];
+							[user setObject:[spanNode allContents] forKey:@"rankwins"];
 						}
 						//looses
 						if ([[spanNode getAttributeNamed:@"style"] isEqualToString:@"font-weight: bold; font-size: 18px; line-height: 28px; color: #D77;"]) {
-							rankLooses = [spanNode allContents];
+							[user setObject:[spanNode allContents] forKey:@"ranklooses"];
 						}
 						//avg kda
 						if ([[spanNode getAttributeNamed:@"style"] isEqualToString:@"font-weight: bold; font-size: 18px; line-height: 28px; color: #DA2;"]) {
-							kda = [spanNode allContents];
+							[user setObject:[spanNode allContents] forKey:@"kda"];
 						}
 						
 					}
@@ -107,13 +111,25 @@
 					NSString *cutString = [[[[iconURL componentsSeparatedByString:@"profile_icons/"] objectAtIndex:1] componentsSeparatedByString:@")"] objectAtIndex:0];
 					NSString *fullIconURL = [NSString stringWithFormat:@"%@%@", @"http://lkimg.zamimg.com/shared/riot/images/profile_icons/", cutString];
 					
-					icon = fullIconURL;
+					[user setObject:fullIconURL forKey:@"icon"];
 				}
 			}
 			
+			[users addObject:user];
 		}
 	}
-
+	/* Get target summoner with certain region */
+	for (NSMutableDictionary *user in users){
+		if ([[user objectForKey:@"region"] isEqualToString:region]) {
+			currentLevel = [user objectForKey:@"currentlevel"];
+			rankLevel =[user objectForKey:@"ranklevel"];
+			rankScore = [user objectForKey:@"rankscore"];
+			rankWins = [user objectForKey:@"rankwins"];
+			rankLooses = [user objectForKey:@"ranklooses"];
+			kda = [user objectForKey:@"kda"];
+			icon = [user objectForKey:@"icon"];
+		}
+	}
 }
 
 -(id) initWithSummonerName:(NSString *)summonerName region:(NSString *)summoneRegion{
