@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8D05D7D1827D14E00A22A87 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D05D7C1827D14E00A22A87 /* Cocoa.framework */; };
+		A8D05D871827D14E00A22A87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8D05D851827D14E00A22A87 /* InfoPlist.strings */; };
+		A8D05D891827D14E00A22A87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D05D881827D14E00A22A87 /* main.m */; };
+		A8D05D8D1827D14E00A22A87 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A8D05D8B1827D14E00A22A87 /* Credits.rtf */; };
+		A8D05D901827D14E00A22A87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D05D8F1827D14E00A22A87 /* AppDelegate.m */; };
+		A8D05D931827D14E00A22A87 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8D05D911827D14E00A22A87 /* MainMenu.xib */; };
+		A8D05D951827D14E00A22A87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D05D941827D14E00A22A87 /* Images.xcassets */; };
+		A8D05D9C1827D14E00A22A87 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D05D9B1827D14E00A22A87 /* XCTest.framework */; };
+		A8D05D9D1827D14E00A22A87 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D05D7C1827D14E00A22A87 /* Cocoa.framework */; };
+		A8D05DA51827D14E00A22A87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8D05DA31827D14E00A22A87 /* InfoPlist.strings */; };
+		A8D05DA71827D14E00A22A87 /* lolkingClientGUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D05DA61827D14E00A22A87 /* lolkingClientGUITests.m */; };
+		A8D05DBA1827D18000A22A87 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D05DB91827D18000A22A87 /* libxml2.2.dylib */; };
+		A8D05DBC1827E34800A22A87 /* BlockedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D05DBB1827E34800A22A87 /* BlockedIcon.png */; };
+		A8D05DC41827E69700A22A87 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D05DBF1827E69700A22A87 /* HTMLNode.m */; };
+		A8D05DC51827E69700A22A87 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D05DC11827E69700A22A87 /* HTMLParser.m */; };
+		A8D05DC61827E69700A22A87 /* summoner.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D05DC31827E69700A22A87 /* summoner.m */; };
+		A8D05DCD1828702600A22A87 /* katarina.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D05DCC1828702600A22A87 /* katarina.png */; };
+		A8D05DCF182871A700A22A87 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A8D05DCE182871A700A22A87 /* LICENSE */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8D05D9E1827D14E00A22A87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8D05D711827D14E00A22A87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8D05D781827D14E00A22A87;
+			remoteInfo = lolkingClientGUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A8D05D791827D14E00A22A87 /* lolkingClientGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lolkingClientGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D05D7C1827D14E00A22A87 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A8D05D7F1827D14E00A22A87 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A8D05D801827D14E00A22A87 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A8D05D811827D14E00A22A87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A8D05D841827D14E00A22A87 /* lolkingClientGUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lolkingClientGUI-Info.plist"; sourceTree = "<group>"; };
+		A8D05D861827D14E00A22A87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A8D05D881827D14E00A22A87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A8D05D8A1827D14E00A22A87 /* lolkingClientGUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lolkingClientGUI-Prefix.pch"; sourceTree = "<group>"; };
+		A8D05D8C1827D14E00A22A87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A8D05D8E1827D14E00A22A87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A8D05D8F1827D14E00A22A87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A8D05D921827D14E00A22A87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A8D05D941827D14E00A22A87 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A8D05D9A1827D14E00A22A87 /* lolkingClientGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lolkingClientGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D05D9B1827D14E00A22A87 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A8D05DA21827D14E00A22A87 /* lolkingClientGUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lolkingClientGUITests-Info.plist"; sourceTree = "<group>"; };
+		A8D05DA41827D14E00A22A87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A8D05DA61827D14E00A22A87 /* lolkingClientGUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lolkingClientGUITests.m; sourceTree = "<group>"; };
+		A8D05DB91827D18000A22A87 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		A8D05DBB1827E34800A22A87 /* BlockedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlockedIcon.png; sourceTree = "<group>"; };
+		A8D05DBE1827E69700A22A87 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		A8D05DBF1827E69700A22A87 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		A8D05DC01827E69700A22A87 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		A8D05DC11827E69700A22A87 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		A8D05DC21827E69700A22A87 /* summoner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = summoner.h; sourceTree = "<group>"; };
+		A8D05DC31827E69700A22A87 /* summoner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = summoner.m; sourceTree = "<group>"; };
+		A8D05DC71827EBF000A22A87 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		A8D05DC91827ED4F00A22A87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		A8D05DCC1828702600A22A87 /* katarina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = katarina.png; sourceTree = "<group>"; };
+		A8D05DCE182871A700A22A87 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A8D05DD01828763200A22A87 /* lolkingClientGUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = lolkingClientGUI.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8D05D761827D14E00A22A87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D05DBA1827D18000A22A87 /* libxml2.2.dylib in Frameworks */,
+				A8D05D7D1827D14E00A22A87 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D05D971827D14E00A22A87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D05D9D1827D14E00A22A87 /* Cocoa.framework in Frameworks */,
+				A8D05D9C1827D14E00A22A87 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8D05D701827D14E00A22A87 = {
+			isa = PBXGroup;
+			children = (
+				A8D05D821827D14E00A22A87 /* lolkingClientGUI */,
+				A8D05DA01827D14E00A22A87 /* lolkingClientGUITests */,
+				A8D05D7B1827D14E00A22A87 /* Frameworks */,
+				A8D05D7A1827D14E00A22A87 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8D05D7A1827D14E00A22A87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8D05D791827D14E00A22A87 /* lolkingClientGUI.app */,
+				A8D05D9A1827D14E00A22A87 /* lolkingClientGUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8D05D7B1827D14E00A22A87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8D05DB91827D18000A22A87 /* libxml2.2.dylib */,
+				A8D05D7C1827D14E00A22A87 /* Cocoa.framework */,
+				A8D05D9B1827D14E00A22A87 /* XCTest.framework */,
+				A8D05D7E1827D14E00A22A87 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8D05D7E1827D14E00A22A87 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8D05D7F1827D14E00A22A87 /* AppKit.framework */,
+				A8D05D801827D14E00A22A87 /* CoreData.framework */,
+				A8D05D811827D14E00A22A87 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A8D05D821827D14E00A22A87 /* lolkingClientGUI */ = {
+			isa = PBXGroup;
+			children = (
+				A8D05DD01828763200A22A87 /* lolkingClientGUI.entitlements */,
+				A8D05DBD1827E35000A22A87 /* Resources */,
+				A8D05D8E1827D14E00A22A87 /* AppDelegate.h */,
+				A8D05D8F1827D14E00A22A87 /* AppDelegate.m */,
+				A8D05D911827D14E00A22A87 /* MainMenu.xib */,
+				A8D05D941827D14E00A22A87 /* Images.xcassets */,
+				A8D05D831827D14E00A22A87 /* Supporting Files */,
+			);
+			path = lolkingClientGUI;
+			sourceTree = "<group>";
+		};
+		A8D05D831827D14E00A22A87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8D05DBE1827E69700A22A87 /* HTMLNode.h */,
+				A8D05DBF1827E69700A22A87 /* HTMLNode.m */,
+				A8D05DC01827E69700A22A87 /* HTMLParser.h */,
+				A8D05DC11827E69700A22A87 /* HTMLParser.m */,
+				A8D05DC21827E69700A22A87 /* summoner.h */,
+				A8D05DC31827E69700A22A87 /* summoner.m */,
+				A8D05D841827D14E00A22A87 /* lolkingClientGUI-Info.plist */,
+				A8D05D851827D14E00A22A87 /* InfoPlist.strings */,
+				A8D05D881827D14E00A22A87 /* main.m */,
+				A8D05D8A1827D14E00A22A87 /* lolkingClientGUI-Prefix.pch */,
+				A8D05D8B1827D14E00A22A87 /* Credits.rtf */,
+				A8D05DCE182871A700A22A87 /* LICENSE */,
+				A8D05DC71827EBF000A22A87 /* version.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8D05DA01827D14E00A22A87 /* lolkingClientGUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A8D05DA61827D14E00A22A87 /* lolkingClientGUITests.m */,
+				A8D05DA11827D14E00A22A87 /* Supporting Files */,
+			);
+			path = lolkingClientGUITests;
+			sourceTree = "<group>";
+		};
+		A8D05DA11827D14E00A22A87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8D05DA21827D14E00A22A87 /* lolkingClientGUITests-Info.plist */,
+				A8D05DA31827D14E00A22A87 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8D05DBD1827E35000A22A87 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8D05DCC1828702600A22A87 /* katarina.png */,
+				A8D05DBB1827E34800A22A87 /* BlockedIcon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8D05D781827D14E00A22A87 /* lolkingClientGUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8D05DAA1827D14E00A22A87 /* Build configuration list for PBXNativeTarget "lolkingClientGUI" */;
+			buildPhases = (
+				A8D05D751827D14E00A22A87 /* Sources */,
+				A8D05D761827D14E00A22A87 /* Frameworks */,
+				A8D05D771827D14E00A22A87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lolkingClientGUI;
+			productName = lolkingClientGUI;
+			productReference = A8D05D791827D14E00A22A87 /* lolkingClientGUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8D05D991827D14E00A22A87 /* lolkingClientGUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8D05DAD1827D14E00A22A87 /* Build configuration list for PBXNativeTarget "lolkingClientGUITests" */;
+			buildPhases = (
+				A8D05D961827D14E00A22A87 /* Sources */,
+				A8D05D971827D14E00A22A87 /* Frameworks */,
+				A8D05D981827D14E00A22A87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8D05D9F1827D14E00A22A87 /* PBXTargetDependency */,
+			);
+			name = lolkingClientGUITests;
+			productName = lolkingClientGUITests;
+			productReference = A8D05D9A1827D14E00A22A87 /* lolkingClientGUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8D05D711827D14E00A22A87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "R&B";
+				TargetAttributes = {
+					A8D05D781827D14E00A22A87 = {
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					A8D05D991827D14E00A22A87 = {
+						TestTargetID = A8D05D781827D14E00A22A87;
+					};
+				};
+			};
+			buildConfigurationList = A8D05D741827D14E00A22A87 /* Build configuration list for PBXProject "lolkingClientGUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8D05D701827D14E00A22A87;
+			productRefGroup = A8D05D7A1827D14E00A22A87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8D05D781827D14E00A22A87 /* lolkingClientGUI */,
+				A8D05D991827D14E00A22A87 /* lolkingClientGUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8D05D771827D14E00A22A87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D05D871827D14E00A22A87 /* InfoPlist.strings in Resources */,
+				A8D05DBC1827E34800A22A87 /* BlockedIcon.png in Resources */,
+				A8D05D951827D14E00A22A87 /* Images.xcassets in Resources */,
+				A8D05DCF182871A700A22A87 /* LICENSE in Resources */,
+				A8D05D8D1827D14E00A22A87 /* Credits.rtf in Resources */,
+				A8D05DCD1828702600A22A87 /* katarina.png in Resources */,
+				A8D05D931827D14E00A22A87 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D05D981827D14E00A22A87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D05DA51827D14E00A22A87 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8D05D751827D14E00A22A87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D05D901827D14E00A22A87 /* AppDelegate.m in Sources */,
+				A8D05DC51827E69700A22A87 /* HTMLParser.m in Sources */,
+				A8D05DC61827E69700A22A87 /* summoner.m in Sources */,
+				A8D05D891827D14E00A22A87 /* main.m in Sources */,
+				A8D05DC41827E69700A22A87 /* HTMLNode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D05D961827D14E00A22A87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D05DA71827D14E00A22A87 /* lolkingClientGUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8D05D9F1827D14E00A22A87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8D05D781827D14E00A22A87 /* lolkingClientGUI */;
+			targetProxy = A8D05D9E1827D14E00A22A87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A8D05D851827D14E00A22A87 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8D05D861827D14E00A22A87 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A8D05D8B1827D14E00A22A87 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8D05D8C1827D14E00A22A87 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		A8D05D911827D14E00A22A87 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8D05D921827D14E00A22A87 /* Base */,
+				A8D05DC91827ED4F00A22A87 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		A8D05DA31827D14E00A22A87 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8D05DA41827D14E00A22A87 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8D05DA81827D14E00A22A87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A8D05DA91827D14E00A22A87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A8D05DAB1827D14E00A22A87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = lolkingClientGUI/lolkingClientGUI.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "lolkingClientGUI/lolkingClientGUI-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "lolkingClientGUI/lolkingClientGUI-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A8D05DAC1827D14E00A22A87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = lolkingClientGUI/lolkingClientGUI.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "lolkingClientGUI/lolkingClientGUI-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "lolkingClientGUI/lolkingClientGUI-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A8D05DAE1827D14E00A22A87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/lolkingClientGUI.app/Contents/MacOS/lolkingClientGUI";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "lolkingClientGUI/lolkingClientGUI-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "lolkingClientGUITests/lolkingClientGUITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A8D05DAF1827D14E00A22A87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/lolkingClientGUI.app/Contents/MacOS/lolkingClientGUI";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "lolkingClientGUI/lolkingClientGUI-Prefix.pch";
+				INFOPLIST_FILE = "lolkingClientGUITests/lolkingClientGUITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8D05D741827D14E00A22A87 /* Build configuration list for PBXProject "lolkingClientGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D05DA81827D14E00A22A87 /* Debug */,
+				A8D05DA91827D14E00A22A87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8D05DAA1827D14E00A22A87 /* Build configuration list for PBXNativeTarget "lolkingClientGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D05DAB1827D14E00A22A87 /* Debug */,
+				A8D05DAC1827D14E00A22A87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8D05DAD1827D14E00A22A87 /* Build configuration list for PBXNativeTarget "lolkingClientGUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D05DAE1827D14E00A22A87 /* Debug */,
+				A8D05DAF1827D14E00A22A87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8D05D711827D14E00A22A87 /* Project object */;
+}
