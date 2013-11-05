@@ -7,14 +7,14 @@ are retrieved from Lolking.net. The program will never save your personal info.
 
 Build dependencies
 ------------------
-Cocoa Framework
-libxml2
+1. Cocoa Framework
+2. libxml2
 
 Special thanks
 --------------
-Objective-C-HMTL-Parser written by zootreeves
-Lolking.net for providing resources (include image and data)
-My mom and dad
+1. Objective-C-HMTL-Parser written by zootreeves
+2. Lolking.net for providing resources (include image and data)
+M3. y mom and dad
 
 TODO
 ----
