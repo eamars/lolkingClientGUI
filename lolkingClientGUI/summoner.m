@@ -134,7 +134,8 @@
 
 -(id) initWithSummonerName:(NSString *)summonerName region:(NSString *)summoneRegion{
 	if (self = [super init]) {
-		name = summonerName;
+		name = [summonerName stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+		NSLog(@"%@", name);
 		region = summoneRegion;
 		[self initBriefData];
 	}
