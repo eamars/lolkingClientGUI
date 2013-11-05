@@ -16,6 +16,11 @@ Special thanks
 2. Lolking.net for providing resources (include image and data)
 3. My mom and dad
 
+Changelog
+---------
+0.4: switch to older summoner selection system to fix the bug with region
+0.41: speed up with cacheing the summoner's icon
+
 TODO
 ----
 1. Retrieving recent play and most used champions
