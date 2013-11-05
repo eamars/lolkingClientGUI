@@ -36,7 +36,7 @@
 	[regionSelector addItemsWithTitles:regions];
 	
 	//load default image
-	NSString *defaultIconPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingString:@"/BlockedIcon.png"];
+	NSString *defaultIconPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingString:@"/katarina.png"];
 	// Set default image for summoner icon
 	defaultIcon = [[NSImage alloc] initWithContentsOfFile:defaultIconPath];
 	

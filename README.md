@@ -21,6 +21,7 @@ Changelog
 0.4: switch to older summoner selection system to fix the bug with region
 0.41: speed up with cacheing the summoner's icon
 
+
 TODO
 ----
 1. Retrieving recent play and most used champions

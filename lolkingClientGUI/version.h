@@ -9,6 +9,6 @@
 #ifndef lolkingClientGUI_version_h
 #define lolkingClientGUI_version_h
 
-#define VERSION @"0.41"
+#define VERSION @"0.42"
 
 #endif

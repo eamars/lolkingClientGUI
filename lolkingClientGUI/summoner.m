@@ -108,10 +108,9 @@
 				if ([[subDivNode getAttributeNamed:@"class"] isEqualToString:@"summoner_icon_64"])
 				{
 					NSString *iconURL = [subDivNode getAttributeNamed:@"style"];
-					NSString *cutString = [[[[iconURL componentsSeparatedByString:@"profile_icons/"] objectAtIndex:1] componentsSeparatedByString:@")"] objectAtIndex:0];
-					NSString *fullIconURL = [NSString stringWithFormat:@"%@%@", @"http://lkimg.zamimg.com/shared/riot/images/profile_icons/", cutString];
+					NSString *iconName = [[[[iconURL componentsSeparatedByString:@"profile_icons/"] objectAtIndex:1] componentsSeparatedByString:@")"] objectAtIndex:0];
 					
-					[user setObject:fullIconURL forKey:@"icon"];
+					[user setObject:iconName forKey:@"icon"];
 				}
 			}
 			
@@ -135,7 +134,6 @@
 -(id) initWithSummonerName:(NSString *)summonerName region:(NSString *)summoneRegion{
 	if (self = [super init]) {
 		name = [summonerName stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
-		NSLog(@"%@", name);
 		region = summoneRegion;
 		[self initBriefData];
 	}
@@ -164,7 +162,19 @@
 	return kda;
 }
 -(NSData *)getIcon{
-	NSData *summonericon = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:icon]];
+	NSData *summonericon;
+	NSString *iconPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingFormat:@"/%@", icon];
+	
+	// check if exist the summoner icon in the dictionary
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	if ([fileManager fileExistsAtPath:iconPath]) {
+		summonericon = [[NSData alloc] initWithContentsOfFile:iconPath];
+	}
+	else{
+		NSString *fullIconURL = [NSString stringWithFormat:@"%@%@", @"http://lkimg.zamimg.com/shared/riot/images/profile_icons/", icon];
+		summonericon = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:fullIconURL]];
+	}
+	
 	return summonericon;
 }
 
